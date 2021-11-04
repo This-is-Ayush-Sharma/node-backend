@@ -45,7 +45,7 @@ const showoutput = async (filenm) =>{
 
 const getoutput = async(filenm) =>{
     // console.log("output gen");
-    var command2 = `${filenm+".exe"} < ${filenm+"input.txt"} > ${filenm+"output.txt"}`;
+    var command2 = `./${filenm} < ${filenm+"input.txt"} > ${filenm+"output.txt"}`;
     filenm=filenm + "error.txt";
     dataerror = await fs.readFile(filenm,"binary");
     // console.log(dataerror);
