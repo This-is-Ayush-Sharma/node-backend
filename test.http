@@ -1,0 +1,17 @@
+POST http://localhost:3000/api/java
+Content-Type: application/json
+
+{
+    "code":"public class Simple{public static void main(String args[]){System.out.println('a');}}",
+    "input":"joe"
+}
+
+{
+    "code":"import java.util.*;class UserInputDemo1{public static void main(String[] args){Scanner sc= new Scanner(System.in);System.out.println();String str= sc.nextLine();System.out.print(str);}}",
+    "input":"ayush"
+}
+
+{
+    "code":"print('ayush sharma')",
+    "input":"ayush.sh"
+}
