@@ -44,7 +44,7 @@ const showoutput = async (filenm) =>{
         }
 }
 const compile = async (filenm) => {
-    var command1 = `python ${filenm+".py"} < ${filenm+"input.txt"} > ${filenm+"output.txt"} 2> ${filenm+"error.txt"}`;
+    var command1 = `python3 ${filenm+".py"} < ${filenm+"input.txt"} > ${filenm+"output.txt"} 2> ${filenm+"error.txt"}`;
     await exec(command1).catch(e => { console.log() });
     // console.log("compiles");
     // console.log(command1+" "+command2);
