@@ -73,7 +73,7 @@ const run = async (object) =>{
     var filename=getname();
     savefile(filename,object.input);
     await compile(filename);
-    // await getoutput(filename);
+    await getoutput(filename);
     const k=await showoutput(filename);
     object.output=k;
     // console.log(obj);
