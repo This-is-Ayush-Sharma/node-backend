@@ -4,10 +4,6 @@ const port = process.env.PORT || 3000;
 const cors = require('cors');
 const routersUrl = require('./routes/routes');
 
-const exec = util.promisify(require('child_process').exec);
-await exec("sudo apt-get install build-essential");
-await exec("sudo apt-get install openjdk-7-jdk");
-
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
 app.use(cors())
