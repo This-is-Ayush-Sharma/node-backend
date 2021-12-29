@@ -22,3 +22,15 @@ https://compilerbckend.onrender.com/api/python
 -npm run start
 
 now you can test the api in localhost 5000
+
+now you have to make post req using fetch api or axios
+
+format of json object:-
+
+{
+    code:"your code",
+    input:"required input",
+    output:""
+}
+
+you will get a responce from the server.
